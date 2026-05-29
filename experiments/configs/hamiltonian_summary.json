@@ -1,0 +1,14 @@
+{
+  "num_linear_terms": 300,
+  "num_quadratic_terms": 3150,
+  "h_min": 1.1555072769137675,
+  "h_max": 3.6895390526466136,
+  "h_mean": 2.460806838241393,
+  "J_min": -0.4604361482422033,
+  "J_max": 0.33784463988744406,
+  "J_mean": -0.06621729329959851,
+  "num_variables": 300,
+  "n_nucleosomes": 25,
+  "n_marks": 12,
+  "l_interaction": 5
+}

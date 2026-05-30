@@ -1,0 +1,1206 @@
+Hamiltonian constructed: 300 linear terms, 3150 quadratic terms
+Preset calibration-full contains 24 condition(s).
+
+--- calib_reads_10 ---
+{
+  "label": "calib_reads_10",
+  "alpha": 0.4,
+  "num_reads": 10,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_052615_calib_reads_10",
+  "date": "2026-05-30T05:26:15",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 1,
+  "reads_per_batch": "10"
+}
+Batch 1/1: 10 reads
+Summary:
+{
+  "run_id": "20260530_052615_calib_reads_10",
+  "label": "calib_reads_10",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:26:15",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10,
+  "num_samples_returned": 10,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 1,
+  "reads_per_batch": "10",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.26412673279657,
+  "E_std": 4.433229571308578,
+  "ground_state_probability": 0.1,
+  "chain_break_fraction": 0.0003333333333333334,
+  "qpu_access_time_us_sum": 18491.76,
+  "qpu_programming_time_us_sum": 15763.96,
+  "qpu_sampling_time_us_sum": 2727.8,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 232.2
+}
+
+--- calib_reads_50 ---
+{
+  "label": "calib_reads_50",
+  "alpha": 0.4,
+  "num_reads": 50,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_052712_calib_reads_50",
+  "date": "2026-05-30T05:27:12",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 1,
+  "reads_per_batch": "50"
+}
+Batch 1/1: 50 reads
+Summary:
+{
+  "run_id": "20260530_052712_calib_reads_50",
+  "label": "calib_reads_50",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:27:12",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 50,
+  "num_samples_returned": 44,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 1,
+  "reads_per_batch": "50",
+  "E_min": -378.73061014646265,
+  "E_mean": -371.8440246868372,
+  "E_std": 4.011067035484682,
+  "ground_state_probability": 0.022727272727272728,
+  "chain_break_fraction": 0.0008333333333333334,
+  "qpu_access_time_us_sum": 29106.16,
+  "qpu_programming_time_us_sum": 15763.16,
+  "qpu_sampling_time_us_sum": 13343.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 226.28
+}
+
+--- calib_reads_100 ---
+{
+  "label": "calib_reads_100",
+  "alpha": 0.4,
+  "num_reads": 100,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_052839_calib_reads_100",
+  "date": "2026-05-30T05:28:39",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 1,
+  "reads_per_batch": "100"
+}
+Batch 1/1: 100 reads
+Summary:
+{
+  "run_id": "20260530_052839_calib_reads_100",
+  "label": "calib_reads_100",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:28:39",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 100,
+  "num_samples_returned": 76,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 1,
+  "reads_per_batch": "100",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.5940622188244,
+  "E_std": 4.051349769664749,
+  "ground_state_probability": 0.039473684210526314,
+  "chain_break_fraction": 0.0007017543859649123,
+  "qpu_access_time_us_sum": 43152.36,
+  "qpu_programming_time_us_sum": 15762.36,
+  "qpu_sampling_time_us_sum": 27390.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 233.32
+}
+
+--- calib_reads_500 ---
+{
+  "label": "calib_reads_500",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_052926_calib_reads_500",
+  "date": "2026-05-30T05:29:26",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_052926_calib_reads_500",
+  "label": "calib_reads_500",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:29:26",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 434,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -370.9462181153294,
+  "E_std": 4.4180954519145015,
+  "ground_state_probability": 0.020737327188940093,
+  "chain_break_fraction": 0.0007296466973886329,
+  "qpu_access_time_us_sum": 182737.88,
+  "qpu_programming_time_us_sum": 47277.88,
+  "qpu_sampling_time_us_sum": 135460.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 235.38
+}
+
+--- calib_reads_1000 ---
+{
+  "label": "calib_reads_1000",
+  "alpha": 0.4,
+  "num_reads": 1000,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_053336_calib_reads_1000",
+  "date": "2026-05-30T05:33:36",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "200;200;200;200;200"
+}
+Batch 1/5: 200 reads
+Batch 2/5: 200 reads
+Batch 3/5: 200 reads
+Batch 4/5: 200 reads
+Batch 5/5: 200 reads
+Summary:
+{
+  "run_id": "20260530_053336_calib_reads_1000",
+  "label": "calib_reads_1000",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:33:36",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 1000,
+  "num_samples_returned": 752,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 5,
+  "reads_per_batch": "200;200;200;200;200",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.77934705517674,
+  "E_std": 3.524875709704183,
+  "ground_state_probability": 0.03590425531914894,
+  "chain_break_fraction": 0.0005939716312056738,
+  "qpu_access_time_us_sum": 348084.60000000003,
+  "qpu_programming_time_us_sum": 78816.6,
+  "qpu_sampling_time_us_sum": 269268.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 228.58
+}
+
+--- calib_reads_2000 ---
+{
+  "label": "calib_reads_2000",
+  "alpha": 0.4,
+  "num_reads": 2000,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_053918_calib_reads_2000",
+  "date": "2026-05-30T05:39:18",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 10,
+  "reads_per_batch": "200;200;200;200;200;200;200;200;200;200"
+}
+Batch 1/10: 200 reads
+Batch 2/10: 200 reads
+Batch 3/10: 200 reads
+Batch 4/10: 200 reads
+Batch 5/10: 200 reads
+Batch 6/10: 200 reads
+Batch 7/10: 200 reads
+Batch 8/10: 200 reads
+Batch 9/10: 200 reads
+Batch 10/10: 200 reads
+Summary:
+{
+  "run_id": "20260530_053918_calib_reads_2000",
+  "label": "calib_reads_2000",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:39:18",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 2000,
+  "num_samples_returned": 1584,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 10,
+  "reads_per_batch": "200;200;200;200;200;200;200;200;200;200",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.10975382414466,
+  "E_std": 3.860982003154958,
+  "ground_state_probability": 0.02462121212121212,
+  "chain_break_fraction": 0.0008585858585858585,
+  "qpu_access_time_us_sum": 701542.0,
+  "qpu_programming_time_us_sum": 157618.0,
+  "qpu_sampling_time_us_sum": 543924.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 232.9
+}
+
+--- calib_reads_5000 ---
+{
+  "label": "calib_reads_5000",
+  "alpha": 0.4,
+  "num_reads": 5000,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_054917_calib_reads_5000",
+  "date": "2026-05-30T05:49:17",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 25,
+  "reads_per_batch": "200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200"
+}
+Batch 1/25: 200 reads
+Batch 2/25: 200 reads
+Batch 3/25: 200 reads
+Batch 4/25: 200 reads
+Batch 5/25: 200 reads
+Batch 6/25: 200 reads
+Batch 7/25: 200 reads
+Batch 8/25: 200 reads
+Batch 9/25: 200 reads
+Batch 10/25: 200 reads
+Batch 11/25: 200 reads
+Batch 12/25: 200 reads
+Batch 13/25: 200 reads
+Batch 14/25: 200 reads
+Batch 15/25: 200 reads
+Batch 16/25: 200 reads
+Batch 17/25: 200 reads
+Batch 18/25: 200 reads
+Batch 19/25: 200 reads
+Batch 20/25: 200 reads
+Batch 21/25: 200 reads
+Batch 22/25: 200 reads
+Batch 23/25: 200 reads
+Batch 24/25: 200 reads
+Batch 25/25: 200 reads
+Summary:
+{
+  "run_id": "20260530_054917_calib_reads_5000",
+  "label": "calib_reads_5000",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T05:49:17",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 5000,
+  "num_samples_returned": 3967,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 25,
+  "reads_per_batch": "200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200;200",
+  "E_min": -378.73061014646265,
+  "E_mean": -371.89809096066756,
+  "E_std": 4.134193219522956,
+  "ground_state_probability": 0.03302243508948828,
+  "chain_break_fraction": 0.0007604402991345265,
+  "qpu_access_time_us_sum": 1748445.0000000002,
+  "qpu_programming_time_us_sum": 394048.99999999994,
+  "qpu_sampling_time_us_sum": 1354396.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 231.32
+}
+
+--- calib_anneal_5 ---
+{
+  "label": "calib_anneal_5",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 5,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_061957_calib_anneal_5",
+  "date": "2026-05-30T06:19:57",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_061957_calib_anneal_5",
+  "label": "calib_anneal_5",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:19:57",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 500,
+  "annealing_time": 5,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -376.0774939263398,
+  "E_mean": -355.75006594735225,
+  "E_std": 9.695880672900055,
+  "ground_state_probability": 0.004,
+  "chain_break_fraction": 0.0021000000000000003,
+  "qpu_access_time_us_sum": 174576.68,
+  "qpu_programming_time_us_sum": 47288.68,
+  "qpu_sampling_time_us_sum": 127288.0,
+  "qpu_anneal_time_per_sample_us": 5.0,
+  "qpu_readout_time_per_sample_us": 222.18
+}
+
+--- calib_anneal_20 ---
+{
+  "label": "calib_anneal_20",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_062317_calib_anneal_20",
+  "date": "2026-05-30T06:23:17",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_062317_calib_anneal_20",
+  "label": "calib_anneal_20",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:23:17",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 397,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.3119088653748,
+  "E_std": 3.646805502767046,
+  "ground_state_probability": 0.03526448362720403,
+  "chain_break_fraction": 0.001015952980688497,
+  "qpu_access_time_us_sum": 183617.88,
+  "qpu_programming_time_us_sum": 47271.880000000005,
+  "qpu_sampling_time_us_sum": 136346.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 229.7
+}
+
+--- calib_anneal_50 ---
+{
+  "label": "calib_anneal_50",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 50,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_062755_calib_anneal_50",
+  "date": "2026-05-30T06:27:55",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_062755_calib_anneal_50",
+  "label": "calib_anneal_50",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:27:55",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 335,
+  "annealing_time": 50,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -373.70633724852485,
+  "E_std": 3.019912910308087,
+  "ground_state_probability": 0.056716417910447764,
+  "chain_break_fraction": 0.0008557213930348258,
+  "qpu_access_time_us_sum": 198267.48,
+  "qpu_programming_time_us_sum": 47273.48,
+  "qpu_sampling_time_us_sum": 150994.0,
+  "qpu_anneal_time_per_sample_us": 50.0,
+  "qpu_readout_time_per_sample_us": 234.46
+}
+
+--- calib_anneal_100 ---
+{
+  "label": "calib_anneal_100",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 100,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_063109_calib_anneal_100",
+  "date": "2026-05-30T06:31:09",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_063109_calib_anneal_100",
+  "label": "calib_anneal_100",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:31:09",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 295,
+  "annealing_time": 100,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -374.1689075148115,
+  "E_std": 2.9602635979054868,
+  "ground_state_probability": 0.09152542372881356,
+  "chain_break_fraction": 0.000903954802259887,
+  "qpu_access_time_us_sum": 222371.48,
+  "qpu_programming_time_us_sum": 47287.479999999996,
+  "qpu_sampling_time_us_sum": 175084.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 233.08
+}
+
+--- calib_anneal_500 ---
+{
+  "label": "calib_anneal_500",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 500,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_063658_calib_anneal_500",
+  "date": "2026-05-30T06:36:58",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_063658_calib_anneal_500",
+  "label": "calib_anneal_500",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:36:58",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 250,
+  "annealing_time": 500,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -374.61240590436444,
+  "E_std": 2.316521854830469,
+  "ground_state_probability": 0.084,
+  "chain_break_fraction": 0.0007866666666666666,
+  "qpu_access_time_us_sum": 423233.08,
+  "qpu_programming_time_us_sum": 47277.079999999994,
+  "qpu_sampling_time_us_sum": 375956.0,
+  "qpu_anneal_time_per_sample_us": 500.0,
+  "qpu_readout_time_per_sample_us": 235.16
+}
+
+--- calib_anneal_1000 ---
+{
+  "label": "calib_anneal_1000",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 1000,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_063941_calib_anneal_1000",
+  "date": "2026-05-30T06:39:41",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_063941_calib_anneal_1000",
+  "label": "calib_anneal_1000",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:39:41",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 216,
+  "annealing_time": 1000,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -374.37705538674317,
+  "E_std": 2.9041094854742697,
+  "ground_state_probability": 0.10648148148148148,
+  "chain_break_fraction": 0.000941358024691358,
+  "qpu_access_time_us_sum": 671260.28,
+  "qpu_programming_time_us_sum": 47288.28,
+  "qpu_sampling_time_us_sum": 623972.0,
+  "qpu_anneal_time_per_sample_us": 1000.0,
+  "qpu_readout_time_per_sample_us": 234.24
+}
+
+--- calib_anneal_2000 ---
+{
+  "label": "calib_anneal_2000",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 2000,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_064505_calib_anneal_2000",
+  "date": "2026-05-30T06:45:05",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_064505_calib_anneal_2000",
+  "label": "calib_anneal_2000",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:45:05",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 218,
+  "annealing_time": 2000,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -373.7278347450658,
+  "E_std": 2.9818768964011753,
+  "ground_state_probability": 0.05045871559633028,
+  "chain_break_fraction": 0.0007645259938837922,
+  "qpu_access_time_us_sum": 1173156.28,
+  "qpu_programming_time_us_sum": 47284.28,
+  "qpu_sampling_time_us_sum": 1125872.0,
+  "qpu_anneal_time_per_sample_us": 2000.0,
+  "qpu_readout_time_per_sample_us": 233.12
+}
+
+--- calib_chain_0p5 ---
+{
+  "label": "calib_chain_0p5",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 0.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_064752_calib_chain_0p5",
+  "date": "2026-05-30T06:47:52",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_064752_calib_chain_0p5",
+  "label": "calib_chain_0p5",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:47:52",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 17,
+  "annealing_time": 20,
+  "chain_strength": 0.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -378.73061014646265,
+  "E_std": 0.0,
+  "ground_state_probability": 1.0,
+  "chain_break_fraction": 0.0029411764705882353,
+  "qpu_access_time_us_sum": 181675.88,
+  "qpu_programming_time_us_sum": 47299.880000000005,
+  "qpu_sampling_time_us_sum": 134376.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 228.3
+}
+
+--- calib_chain_1p0 ---
+{
+  "label": "calib_chain_1p0",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_065110_calib_chain_1p0",
+  "date": "2026-05-30T06:51:10",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_065110_calib_chain_1p0",
+  "label": "calib_chain_1p0",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:51:10",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 72,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -377.03260654406006,
+  "E_std": 1.7492388499156113,
+  "ground_state_probability": 0.4722222222222222,
+  "chain_break_fraction": 0.0021296296296296298,
+  "qpu_access_time_us_sum": 181871.47999999998,
+  "qpu_programming_time_us_sum": 47275.479999999996,
+  "qpu_sampling_time_us_sum": 134596.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 228.04
+}
+
+--- calib_chain_1p5 ---
+{
+  "label": "calib_chain_1p5",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_065420_calib_chain_1p5",
+  "date": "2026-05-30T06:54:20",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_065420_calib_chain_1p5",
+  "label": "calib_chain_1p5",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:54:20",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 422,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -371.5553765501016,
+  "E_std": 4.409966752465981,
+  "ground_state_probability": 0.02843601895734597,
+  "chain_break_fraction": 0.0007424960505529225,
+  "qpu_access_time_us_sum": 184213.08000000002,
+  "qpu_programming_time_us_sum": 47283.08,
+  "qpu_sampling_time_us_sum": 136930.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 233.78
+}
+
+--- calib_chain_2p0 ---
+{
+  "label": "calib_chain_2p0",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 2.0,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_065729_calib_chain_2p0",
+  "date": "2026-05-30T06:57:29",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_065729_calib_chain_2p0",
+  "label": "calib_chain_2p0",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T06:57:29",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 500,
+  "annealing_time": 20,
+  "chain_strength": 2.0,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -355.45951109687195,
+  "E_std": 8.947252811151746,
+  "ground_state_probability": 0.002,
+  "chain_break_fraction": 0.0008733333333333333,
+  "qpu_access_time_us_sum": 183192.28,
+  "qpu_programming_time_us_sum": 47282.28,
+  "qpu_sampling_time_us_sum": 135910.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 225.6
+}
+
+--- calib_chain_3p0 ---
+{
+  "label": "calib_chain_3p0",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 3.0,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_070045_calib_chain_3p0",
+  "date": "2026-05-30T07:00:45",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_070045_calib_chain_3p0",
+  "label": "calib_chain_3p0",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:00:45",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 500,
+  "annealing_time": 20,
+  "chain_strength": 3.0,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -320.93605158224756,
+  "E_mean": -278.07385636889177,
+  "E_std": 17.54664167475333,
+  "ground_state_probability": 0.002,
+  "chain_break_fraction": 0.0017933333333333334,
+  "qpu_access_time_us_sum": 184422.68,
+  "qpu_programming_time_us_sum": 47284.68,
+  "qpu_sampling_time_us_sum": 137138.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 233.32
+}
+
+--- calib_alpha_0p2 ---
+{
+  "label": "calib_alpha_0p2",
+  "alpha": 0.2,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_070530_calib_alpha_0p2",
+  "date": "2026-05-30T07:05:30",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_070530_calib_alpha_0p2",
+  "label": "calib_alpha_0p2",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:05:30",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.2,
+  "num_reads_requested": 500,
+  "num_samples_returned": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -174.0938009988835,
+  "E_mean": -147.42901213178155,
+  "E_std": 8.182033041882262,
+  "ground_state_probability": 0.002,
+  "chain_break_fraction": 0.0009133333333333334,
+  "qpu_access_time_us_sum": 182256.68,
+  "qpu_programming_time_us_sum": 47286.68,
+  "qpu_sampling_time_us_sum": 134970.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 232.2
+}
+
+--- calib_alpha_0p3 ---
+{
+  "label": "calib_alpha_0p3",
+  "alpha": 0.3,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_071224_calib_alpha_0p3",
+  "date": "2026-05-30T07:12:24",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_071224_calib_alpha_0p3",
+  "label": "calib_alpha_0p3",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:12:24",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.3,
+  "num_reads_requested": 500,
+  "num_samples_returned": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -280.36052859970135,
+  "E_mean": -266.32764519493116,
+  "E_std": 7.41994903512356,
+  "ground_state_probability": 0.002,
+  "chain_break_fraction": 0.0006266666666666668,
+  "qpu_access_time_us_sum": 183195.47999999998,
+  "qpu_programming_time_us_sum": 47277.479999999996,
+  "qpu_sampling_time_us_sum": 135918.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 230.12
+}
+
+--- calib_alpha_0p4 ---
+{
+  "label": "calib_alpha_0p4",
+  "alpha": 0.4,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_071526_calib_alpha_0p4",
+  "date": "2026-05-30T07:15:26",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_071526_calib_alpha_0p4",
+  "label": "calib_alpha_0p4",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:15:26",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 500,
+  "num_samples_returned": 363,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -378.73061014646265,
+  "E_mean": -372.7193707903736,
+  "E_std": 3.4955153259458127,
+  "ground_state_probability": 0.03305785123966942,
+  "chain_break_fraction": 0.0005417814508723598,
+  "qpu_access_time_us_sum": 181539.47999999998,
+  "qpu_programming_time_us_sum": 47283.479999999996,
+  "qpu_sampling_time_us_sum": 134256.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 229.28
+}
+
+--- calib_alpha_0p5 ---
+{
+  "label": "calib_alpha_0p5",
+  "alpha": 0.5,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_071941_calib_alpha_0p5",
+  "date": "2026-05-30T07:19:41",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_071941_calib_alpha_0p5",
+  "label": "calib_alpha_0p5",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:19:41",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.5,
+  "num_reads_requested": 500,
+  "num_samples_returned": 198,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -473.41326268307586,
+  "E_mean": -469.43811224618577,
+  "E_std": 2.7435251019315503,
+  "ground_state_probability": 0.20707070707070707,
+  "chain_break_fraction": 0.0015824915824915826,
+  "qpu_access_time_us_sum": 184361.48,
+  "qpu_programming_time_us_sum": 47269.479999999996,
+  "qpu_sampling_time_us_sum": 137092.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 234.72
+}
+
+--- calib_alpha_0p6 ---
+{
+  "label": "calib_alpha_0p6",
+  "alpha": 0.6,
+  "num_reads": 500,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_072450_calib_alpha_0p6",
+  "date": "2026-05-30T07:24:50",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100"
+}
+Batch 1/3: 200 reads
+Batch 2/3: 200 reads
+Batch 3/3: 100 reads
+Summary:
+{
+  "run_id": "20260530_072450_calib_alpha_0p6",
+  "label": "calib_alpha_0p6",
+  "experiment_group": "calibration_full",
+  "notes": "Full overnight timing and parameter calibration",
+  "embedding_id": "auto_embedding",
+  "date": "2026-05-30T07:24:50",
+  "git_commit": "b65f5fa",
+  "solver": "Advantage_system4",
+  "alpha": 0.6,
+  "num_reads_requested": 500,
+  "num_samples_returned": 69,
+  "annealing_time": 20,
+  "chain_strength": 1.5,
+  "num_batches": 3,
+  "reads_per_batch": "200;200;100",
+  "E_min": -568.0959152196937,
+  "E_mean": -565.6739416219901,
+  "E_std": 2.4400899253297847,
+  "ground_state_probability": 0.4782608695652174,
+  "chain_break_fraction": 0.0016908212560386472,
+  "qpu_access_time_us_sum": 180786.68,
+  "qpu_programming_time_us_sum": 47286.68,
+  "qpu_sampling_time_us_sum": 133500.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 227.7
+}
+
+Finished all conditions.
+Main log: experiments/logs/experiment_log.csv

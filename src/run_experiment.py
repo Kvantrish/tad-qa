@@ -63,14 +63,33 @@ def split_reads(total_reads: int, max_reads: int) -> list[int]:
     return batches
 
 
-def estimate_max_reads_per_job(annealing_time: float, max_runtime_us: int = 1_000_000, safety_factor: float = 0.5, hard_cap: int = 200) -> int:
-    """Conservative read cap based on the old script's logic.
-
-    This is intentionally conservative. Later we can replace it with a measured timing model.
+def estimate_max_reads_per_job(
+    annealing_time: float,
+    max_runtime_us: int = 1_000_000,
+    safety_factor: float = 0.90,
+    hard_cap: int = 2000,
+) -> int:
     """
-    per_read_us = annealing_time + 200
-    max_reads = int(safety_factor * (max_runtime_us // per_read_us))
-    return max(1, min(max_reads, hard_cap))
+    Estimate a safe number of reads such that
+
+        num_reads * (annealing_time + readout_time)
+
+    stays below the D-Wave runtime limit.
+
+    We intentionally ignore programming time because it is paid once
+    per submission rather than per read.
+    """
+
+    estimated_per_read_us = annealing_time + 250
+
+    runtime_limited_reads = int(
+        safety_factor * max_runtime_us / estimated_per_read_us
+    )
+
+    return max(
+        1,
+        min(runtime_limited_reads, hard_cap)
+    )
 
 
 def get_solver_name(sampler: Any) -> str:
@@ -126,6 +145,8 @@ def summarize_condition(label: str, all_energies: list[np.ndarray], all_chainbre
         "experiment_group": config.get("experiment_group", ""),
         "notes": config.get("notes", ""),
         "embedding_id": config.get("embedding_id", ""),
+        "repeat_id": config.get("repeat_id", ""),
+        "study_type": config.get("study_type", ""),
         "date": config["date"],
         "git_commit": config["git_commit"],
         "solver": config["solver"],
@@ -225,12 +246,105 @@ def make_preset_configs(preset: str) -> list[dict[str, Any]]:
             })
         
         return configs
+    
+    if preset == "thesis-full":
+        configs = []
+
+        # ==================================================
+        # STUDY 1: CHAIN STRENGTH
+        # ==================================================
+
+        chain_values = [
+            0.25, 0.50, 0.75,
+            1.00, 1.25, 1.50,
+            1.75, 2.00,
+            2.25, 2.50,
+            2.75, 3.00
+        ]
+
+        for repeat in [1, 2, 3]:
+            for cs in chain_values:
+                configs.append({
+                    "label": f"chain_cs_{str(cs).replace('.', 'p')}_r{repeat}",
+                    "study_type": "chain_strength",
+                    "repeat_id": repeat,
+                    "alpha": 0.4,
+                    "num_reads": 10000,
+                    "annealing_time": 100,
+                    "chain_strength": cs,
+                })
+
+        # ==================================================
+        # STUDY 2: ANNEAL TIME
+        # ==================================================
+
+        anneal_values = [
+            5, 10, 20, 50, 100,
+            200, 500, 1000,
+            1500, 2000
+        ]
+
+        for repeat in [1, 2, 3]:
+            for t in anneal_values:
+                configs.append({
+                    "label": f"anneal_{t}_r{repeat}",
+                    "study_type": "anneal_time",
+                    "repeat_id": repeat,
+                    "alpha": 0.4,
+                    "num_reads": 10000,
+                    "annealing_time": t,
+                    "chain_strength": 1.0,
+                })
+
+        # ==================================================
+        # STUDY 3: REPRODUCIBILITY
+        # ==================================================
+
+        for repeat in range(1, 51):
+            configs.append({
+                "label": f"reproducibility_r{repeat:02d}",
+                "study_type": "reproducibility",
+                "repeat_id": repeat,
+                "alpha": 0.4,
+                "num_reads": 10000,
+                "annealing_time": 100,
+                "chain_strength": 1.0,
+            })
+
+        # ==================================================
+        # STUDY 4: READ CONVERGENCE
+        # ==================================================
+
+        read_values = [
+            100,
+            500,
+            1000,
+            5000,
+            10000,
+            50000,
+            100000,
+        ]
+
+        for repeat in [1, 2, 3]:
+            for reads in read_values:
+                configs.append({
+                    "label": f"reads_{reads}_r{repeat}",
+                    "study_type": "read_convergence",
+                    "repeat_id": repeat,
+                    "alpha": 0.4,
+                    "num_reads": reads,
+                    "annealing_time": 100,
+                    "chain_strength": 1.0,
+                })
+
+        return configs
 
     if preset == "alpha-small":
         return [
             {"label": f"alpha_{str(alpha).replace('.', 'p')}", "alpha": alpha, "num_reads": 500, "annealing_time": 20, "chain_strength": 1.5}
             for alpha in [0.2, 0.4, 0.6]
         ]
+    
 
     if preset == "previous-full":
         configs = []
@@ -315,7 +429,7 @@ def main() -> None:
     parser.add_argument(
     "--preset",
     default="smoke",
-    choices=["smoke", "timing", "calibration-full", "alpha-small", "previous-full", "single"])
+    choices=["smoke", "timing", "calibration-full", "thesis-full", "alpha-small", "previous-full", "single"])
     parser.add_argument("--raw-dir", default="experiments/raw")
     parser.add_argument("--plots-dir", default="experiments/plots")
     parser.add_argument("--logs-dir", default="experiments/logs")

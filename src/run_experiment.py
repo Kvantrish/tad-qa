@@ -123,6 +123,9 @@ def summarize_condition(label: str, all_energies: list[np.ndarray], all_chainbre
     return {
         "run_id": config["run_id"],
         "label": label,
+        "experiment_group": config.get("experiment_group", ""),
+        "notes": config.get("notes", ""),
+        "embedding_id": config.get("embedding_id", ""),
         "date": config["date"],
         "git_commit": config["git_commit"],
         "solver": config["solver"],
@@ -279,6 +282,9 @@ def main() -> None:
     parser.add_argument("--annealing-time", type=float)
     parser.add_argument("--chain-strength", type=float)
     parser.add_argument("--label", type=str)
+    parser.add_argument("--experiment-group", type=str, default="general")
+    parser.add_argument("--notes", type=str, default="")
+    parser.add_argument("--embedding-id", type=str, default="auto_embedding")
     args = parser.parse_args()
 
     params = load_parameters(args.params)
@@ -299,13 +305,21 @@ def main() -> None:
 
         configs = [{
             "label": args.label,
+            "experiment_group": args.experiment_group,
+            "notes": args.notes,
+            "embedding_id": args.embedding_id,
             "alpha": args.alpha,
             "num_reads": args.num_reads,
             "annealing_time": args.annealing_time,
             "chain_strength": args.chain_strength,
         }]
+        
     else:
         configs = make_preset_configs(args.preset)
+        for cfg in configs:
+            cfg["experiment_group"] = args.experiment_group
+            cfg["notes"] = args.notes
+            cfg["embedding_id"] = args.embedding_id
 
     print(f"Hamiltonian constructed: {len(h_base)} linear terms, {len(J_base)} quadratic terms")
     print(f"Preset {args.preset} contains {len(configs)} condition(s).")

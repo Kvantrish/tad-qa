@@ -181,6 +181,51 @@ def make_preset_configs(preset: str) -> list[dict[str, Any]]:
             for reads in [10, 50, 100, 500, 1000, 2000]
         ]
 
+    if preset == "calibration-full":
+        configs = []
+
+        # 1. num_reads calibration
+        for reads in [10, 50, 100, 500, 1000, 2000, 5000]:
+            configs.append({
+                "label": f"calib_reads_{reads}",
+                "alpha": 0.4,
+                "num_reads": reads,
+                "annealing_time": 20,
+                "chain_strength": 1.5,
+            })
+
+        # 2. annealing_time calibration
+        for t in [5, 20, 50, 100, 500, 1000, 2000]:
+            configs.append({
+                "label": f"calib_anneal_{t}",
+                "alpha": 0.4,
+                "num_reads": 500,
+                "annealing_time": t,
+                "chain_strength": 1.5,
+            })
+
+        # 3. chain_strength calibration
+        for cs in [0.5, 1.0, 1.5, 2.0, 3.0]:
+            configs.append({
+                "label": f"calib_chain_{str(cs).replace('.', 'p')}",
+                "alpha": 0.4,
+                "num_reads": 500,
+                "annealing_time": 20,
+                "chain_strength": cs,
+            })
+
+        # 4. alpha calibration
+        for alpha in [0.2, 0.3, 0.4, 0.5, 0.6]:
+            configs.append({
+                "label": f"calib_alpha_{str(alpha).replace('.', 'p')}",
+                "alpha": alpha,
+                "num_reads": 500,
+                "annealing_time": 20,
+                "chain_strength": 1.5,
+            })
+        
+        return configs
+
     if preset == "alpha-small":
         return [
             {"label": f"alpha_{str(alpha).replace('.', 'p')}", "alpha": alpha, "num_reads": 500, "annealing_time": 20, "chain_strength": 1.5}
@@ -270,8 +315,7 @@ def main() -> None:
     parser.add_argument(
     "--preset",
     default="smoke",
-    choices=["smoke", "timing", "alpha-small", "previous-full", "single"]
-    )
+    choices=["smoke", "timing", "calibration-full", "alpha-small", "previous-full", "single"])
     parser.add_argument("--raw-dir", default="experiments/raw")
     parser.add_argument("--plots-dir", default="experiments/plots")
     parser.add_argument("--logs-dir", default="experiments/logs")

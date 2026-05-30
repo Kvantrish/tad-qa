@@ -1,0 +1,483 @@
+Hamiltonian constructed: 300 linear terms, 3150 quadratic terms
+Preset may-remaining contains 30 condition(s).
+
+--- anneal_5_single ---
+{
+  "label": "anneal_5_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 5,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_204121_anneal_5_single",
+  "date": "2026-05-30T20:41:21",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_204121_anneal_5_single",
+  "label": "anneal_5_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T20:41:21",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 3016,
+  "annealing_time": 5,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -374.4945919101214,
+  "E_std": 2.962396215490178,
+  "ground_state_probability": 0.16578249336870027,
+  "chain_break_fraction": 0.002307692307692308,
+  "qpu_access_time_us_sum": 2605295.4000000004,
+  "qpu_programming_time_us_sum": 78815.4,
+  "qpu_sampling_time_us_sum": 2526480.0,
+  "qpu_anneal_time_per_sample_us": 5.0,
+  "qpu_readout_time_per_sample_us": 220.32
+}
+
+--- anneal_10_single ---
+{
+  "label": "anneal_10_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 10,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_204810_anneal_10_single",
+  "date": "2026-05-30T20:48:10",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_204810_anneal_10_single",
+  "label": "anneal_10_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T20:48:10",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1837,
+  "annealing_time": 10,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -375.7411377299599,
+  "E_std": 2.3550933841780144,
+  "ground_state_probability": 0.26510615133369625,
+  "chain_break_fraction": 0.0017964071856287425,
+  "qpu_access_time_us_sum": 2704735.0,
+  "qpu_programming_time_us_sum": 78815.0,
+  "qpu_sampling_time_us_sum": 2625920.0,
+  "qpu_anneal_time_per_sample_us": 10.0,
+  "qpu_readout_time_per_sample_us": 229.2
+}
+
+--- anneal_20_single ---
+{
+  "label": "anneal_20_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_205303_anneal_20_single",
+  "date": "2026-05-30T20:53:03",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_205303_anneal_20_single",
+  "label": "anneal_20_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T20:53:03",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1190,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -377.0382188448764,
+  "E_std": 1.78465790972436,
+  "ground_state_probability": 0.48487394957983193,
+  "chain_break_fraction": 0.0022296918767507005,
+  "qpu_access_time_us_sum": 2798309.8000000003,
+  "qpu_programming_time_us_sum": 78829.8,
+  "qpu_sampling_time_us_sum": 2719480.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 234.46
+}
+
+--- anneal_50_single ---
+{
+  "label": "anneal_50_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 50,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_205654_anneal_50_single",
+  "date": "2026-05-30T20:56:54",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_205654_anneal_50_single",
+  "label": "anneal_50_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T20:56:54",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 779,
+  "annealing_time": 50,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.9534360900411,
+  "E_std": 1.7066322415670931,
+  "ground_state_probability": 0.441591784338896,
+  "chain_break_fraction": 0.0020068463842533163,
+  "qpu_access_time_us_sum": 3094137.4,
+  "qpu_programming_time_us_sum": 78817.4,
+  "qpu_sampling_time_us_sum": 3015320.0,
+  "qpu_anneal_time_per_sample_us": 50.0,
+  "qpu_readout_time_per_sample_us": 231.3
+}
+
+--- anneal_100_single ---
+{
+  "label": "anneal_100_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_210335_anneal_100_single",
+  "date": "2026-05-30T21:03:35",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_210335_anneal_100_single",
+  "label": "anneal_100_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T21:03:35",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1017,
+  "annealing_time": 100,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.84957804921174,
+  "E_std": 1.9564318062539479,
+  "ground_state_probability": 0.45722713864306785,
+  "chain_break_fraction": 0.002238610291707637,
+  "qpu_access_time_us_sum": 3614471.0,
+  "qpu_programming_time_us_sum": 78831.0,
+  "qpu_sampling_time_us_sum": 3535640.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 234.72
+}
+
+--- anneal_200_single ---
+{
+  "label": "anneal_200_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 200,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_210839_anneal_200_single",
+  "date": "2026-05-30T21:08:39",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_210839_anneal_200_single",
+  "label": "anneal_200_single",
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "anneal_time",
+  "date": "2026-05-30T21:08:39",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 773,
+  "annealing_time": 200,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.90114916114374,
+  "E_std": 1.7787216953680898,
+  "ground_state_probability": 0.4398447606727037,
+  "chain_break_fraction": 0.002052608883139284,
+  "qpu_access_time_us_sum": 4596177.0,
+  "qpu_programming_time_us_sum": 78817.0,
+  "qpu_sampling_time_us_sum": 4517360.0,
+  "qpu_anneal_time_per_sample_us": 200.0,
+  "qpu_readout_time_per_sample_us": 233.56
+}
+
+--- anneal_500_single ---
+{
+  "label": "anneal_500_single",
+  "study_type": "anneal_time",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 500,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Remaining May characterization: anneal sweep and reproducibility",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_211517_anneal_500_single",
+  "date": "2026-05-30T21:15:17",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 9,
+  "reads_per_batch": "1200;1200;1200;1200;1200;1200;1200;1200;400"
+}
+Batch 1/9: 1200 reads
+Batch 2/9: 1200 reads
+Batch 3/9: 1200 reads
+Batch 4/9: 1200 reads
+Batch 5/9: 1200 reads
+Batch 6/9: 1200 reads
+Traceback (most recent call last):
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 294, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/util/retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 1395, in getresponse
+    response.begin()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/http/client.py", line 294, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/quandary/Desktop/Thesis/tad-qa/src/run_experiment.py", line 557, in <module>
+    main()
+  File "/Users/quandary/Desktop/Thesis/tad-qa/src/run_experiment.py", line 540, in main
+    run_condition(
+  File "/Users/quandary/Desktop/Thesis/tad-qa/src/run_experiment.py", line 439, in run_condition
+    timing = dict(response.info.get("timing", {}))
+                  ^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dimod/sampleset.py", line 1107, in info
+    self.resolve()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dimod/sampleset.py", line 1490, in resolve
+    samples = self._result_hook(self._future)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/system/composites/embedding.py", line 314, in async_unembed
+    response.resolve()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dimod/sampleset.py", line 1490, in resolve
+    samples = self._result_hook(self._future)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/system/samplers/dwave_sampler.py", line 478, in _hook
+    return resolve(computation)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/system/samplers/dwave_sampler.py", line 468, in resolve
+    sampleset.resolve()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dimod/sampleset.py", line 1490, in resolve
+    samples = self._result_hook(self._future)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/computation.py", line 853, in <lambda>
+    sampleset = dimod.SampleSet.from_future(self, lambda f: f.wait_sampleset())
+                                                            ^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/computation.py", line 788, in wait_sampleset
+    self._load_result()
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/computation.py", line 929, in _load_result
+    raise self._exception
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/client/base.py", line 1384, in _do_submit_problems
+    message = Client._sapi_request(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/client/base.py", line 1914, in _sapi_request
+    response = meth(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/requests/sessions.py", line 712, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/api/client.py", line 348, in request
+    response = super().request(*args, headers=headers, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/api/client.py", line 730, in request
+    response = super().request(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/api/client.py", line 101, in request
+    response = self._request_unified(method, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/api/client.py", line 69, in _request_unified
+    return super().request(method, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/utils/http.py", line 93, in request
+    return super().request(method, url, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/api/client.py", line 89, in send
+    return super().send(request, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/dwave/cloud/utils/http.py", line 58, in send
+    return super().send(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/quandary/opt/anaconda3/envs/tad-qa/lib/python3.11/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))

@@ -338,6 +338,70 @@ def make_preset_configs(preset: str) -> list[dict[str, Any]]:
                 })
 
         return configs
+    
+    if preset == "may-remaining":
+        configs = []
+
+        # STUDY 2: single anneal-time sweep
+        anneal_values = [
+            5, 10, 20, 50, 100,
+            200, 500, 1000,
+            1500, 2000
+        ]
+
+        for t in anneal_values:
+            configs.append({
+                "label": f"anneal_{t}_single",
+                "study_type": "anneal_time",
+                "repeat_id": 1,
+                "alpha": 0.4,
+                "num_reads": 10000,
+                "annealing_time": t,
+                "chain_strength": 1.0,
+            })
+
+        # STUDY 3: reproducibility, single block
+        for repeat in range(1, 21):
+            configs.append({
+                "label": f"reproducibility_r{repeat:02d}",
+                "study_type": "reproducibility",
+                "repeat_id": repeat,
+                "alpha": 0.4,
+                "num_reads": 10000,
+                "annealing_time": 100,
+                "chain_strength": 1.0,
+            })
+
+        return configs
+    
+    if preset == "may-finish":
+        configs = []
+
+        # # Finish remaining anneal-time sweep
+        # for t in [500, 1000, 1500, 2000]:
+        #     configs.append({
+        #         "label": f"anneal_{t}_finish",
+        #         "study_type": "anneal_time_finish",
+        #         "repeat_id": 1,
+        #         "alpha": 0.4,
+        #         "num_reads": 10000,
+        #         "annealing_time": t,
+        #         "chain_strength": 1.0,
+        #     })
+
+        # Reproducibility at best observed anneal time so far
+        for repeat in range(4, 11):
+            configs.append({
+                "label": f"reproducibility_20us_r{repeat:02d}",
+                "study_type": "reproducibility",
+                "repeat_id": repeat,
+                "alpha": 0.4,
+                "num_reads": 10000,
+                "annealing_time": 20,
+                "chain_strength": 1.0,
+            })
+
+        return configs
 
     if preset == "alpha-small":
         return [
@@ -392,14 +456,22 @@ def run_condition(sampler: Any, h_base: dict[int, float], J_base: dict[tuple[int
     for batch_index, reads_this_batch in enumerate(batches):
         print(f"Batch {batch_index + 1}/{len(batches)}: {reads_this_batch} reads")
 
-        response = sampler.sample_ising(
-            h_scaled,
-            J_scaled,
-            num_reads=reads_this_batch,
-            annealing_time=cfg["annealing_time"],
-            chain_strength=cfg["chain_strength"],
-            label=f"{run_id}_batch{batch_index}",
-        )
+        response = None
+        for attempt in range(1, 4):
+            try:
+                response = sampler.sample_ising(
+                    h_scaled,
+                    J_scaled,
+                    num_reads=reads_this_batch,
+                    annealing_time=cfg["annealing_time"],
+                    chain_strength=cfg["chain_strength"],
+                    label=f"{run_id}_batch{batch_index}",
+                )
+                break
+            except Exception as e:
+                print(f"Attempt {attempt}/3 failed for batch {batch_index}: {e}")
+                if attempt == 3:
+                    raise
 
         timing = dict(response.info.get("timing", {}))
         timing_records.append(timing)
@@ -429,7 +501,7 @@ def main() -> None:
     parser.add_argument(
     "--preset",
     default="smoke",
-    choices=["smoke", "timing", "calibration-full", "thesis-full", "alpha-small", "previous-full", "single"])
+    choices=["smoke", "timing", "calibration-full", "thesis-full", "may-remaining", "may-finish", "alpha-small", "previous-full", "single"])
     parser.add_argument("--raw-dir", default="experiments/raw")
     parser.add_argument("--plots-dir", default="experiments/plots")
     parser.add_argument("--logs-dir", default="experiments/logs")

@@ -1,0 +1,683 @@
+Hamiltonian constructed: 300 linear terms, 3150 quadratic terms
+Preset thesis-full contains 137 condition(s).
+
+--- chain_cs_0p25_r1 ---
+{
+  "label": "chain_cs_0p25_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 0.25,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_163724_chain_cs_0p25_r1",
+  "date": "2026-05-30T16:37:24",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_163724_chain_cs_0p25_r1",
+  "label": "chain_cs_0p25_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T16:37:24",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 374,
+  "annealing_time": 100,
+  "chain_strength": 0.25,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -378.7306101464628,
+  "E_std": 1.7053025658242404e-13,
+  "ground_state_probability": 1.0,
+  "chain_break_fraction": 0.007522281639928699,
+  "qpu_access_time_us_sum": 3582294.5999999996,
+  "qpu_programming_time_us_sum": 78814.6,
+  "qpu_sampling_time_us_sum": 3503480.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 229.66
+}
+
+--- chain_cs_0p5_r1 ---
+{
+  "label": "chain_cs_0p5_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 0.5,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_164307_chain_cs_0p5_r1",
+  "date": "2026-05-30T16:43:07",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_164307_chain_cs_0p5_r1",
+  "label": "chain_cs_0p5_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T16:43:07",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 327,
+  "annealing_time": 100,
+  "chain_strength": 0.5,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -378.64307100533415,
+  "E_std": 0.4943837098798669,
+  "ground_state_probability": 0.9694189602446484,
+  "chain_break_fraction": 0.0033944954128440376,
+  "qpu_access_time_us_sum": 3610733.0,
+  "qpu_programming_time_us_sum": 78813.0,
+  "qpu_sampling_time_us_sum": 3531920.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 233.1
+}
+
+--- chain_cs_0p75_r1 ---
+{
+  "label": "chain_cs_0p75_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 0.75,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_164757_chain_cs_0p75_r1",
+  "date": "2026-05-30T16:47:57",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_164757_chain_cs_0p75_r1",
+  "label": "chain_cs_0p75_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T16:47:57",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 495,
+  "annealing_time": 100,
+  "chain_strength": 0.75,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -378.0971801498063,
+  "E_std": 1.217098956447694,
+  "ground_state_probability": 0.7838383838383839,
+  "chain_break_fraction": 0.0030235690235690233,
+  "qpu_access_time_us_sum": 3594739.8000000003,
+  "qpu_programming_time_us_sum": 78819.8,
+  "qpu_sampling_time_us_sum": 3515920.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 231.76
+}
+
+--- chain_cs_1p0_r1 ---
+{
+  "label": "chain_cs_1p0_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_165230_chain_cs_1p0_r1",
+  "date": "2026-05-30T16:52:30",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_165230_chain_cs_1p0_r1",
+  "label": "chain_cs_1p0_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T16:52:30",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 919,
+  "annealing_time": 100,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -377.11366349984854,
+  "E_std": 1.692437481290852,
+  "ground_state_probability": 0.4885745375408052,
+  "chain_break_fraction": 0.002223431265868698,
+  "qpu_access_time_us_sum": 3601331.4,
+  "qpu_programming_time_us_sum": 78811.4,
+  "qpu_sampling_time_us_sum": 3522520.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 228.94
+}
+
+--- chain_cs_1p25_r1 ---
+{
+  "label": "chain_cs_1p25_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 1.25,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_170024_chain_cs_1p25_r1",
+  "date": "2026-05-30T17:00:24",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_170024_chain_cs_1p25_r1",
+  "label": "chain_cs_1p25_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:00:24",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1533,
+  "annealing_time": 100,
+  "chain_strength": 1.25,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -375.4897216268004,
+  "E_std": 2.2349498663450293,
+  "ground_state_probability": 0.19699934768427918,
+  "chain_break_fraction": 0.0011480756686236139,
+  "qpu_access_time_us_sum": 3582377.4,
+  "qpu_programming_time_us_sum": 78817.4,
+  "qpu_sampling_time_us_sum": 3503560.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 226.74
+}
+
+--- chain_cs_1p5_r1 ---
+{
+  "label": "chain_cs_1p5_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 1.5,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_170600_chain_cs_1p5_r1",
+  "date": "2026-05-30T17:06:00",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_170600_chain_cs_1p5_r1",
+  "label": "chain_cs_1p5_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:06:00",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 3804,
+  "annealing_time": 100,
+  "chain_strength": 1.5,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -373.46423170861016,
+  "E_std": 2.7652301625110027,
+  "ground_state_probability": 0.06203995793901157,
+  "chain_break_fraction": 0.0007965299684542588,
+  "qpu_access_time_us_sum": 3587385.4,
+  "qpu_programming_time_us_sum": 78785.4,
+  "qpu_sampling_time_us_sum": 3508600.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 227.6
+}
+
+--- chain_cs_1p75_r1 ---
+{
+  "label": "chain_cs_1p75_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 1.75,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_171259_chain_cs_1p75_r1",
+  "date": "2026-05-30T17:12:59",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_171259_chain_cs_1p75_r1",
+  "label": "chain_cs_1p75_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:12:59",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 7386,
+  "annealing_time": 100,
+  "chain_strength": 1.75,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -370.8826897491131,
+  "E_std": 3.884406427979583,
+  "ground_state_probability": 0.014486867045762252,
+  "chain_break_fraction": 0.0005785720732918133,
+  "qpu_access_time_us_sum": 3598328.6,
+  "qpu_programming_time_us_sum": 78808.59999999999,
+  "qpu_sampling_time_us_sum": 3519520.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 231.5
+}
+
+--- chain_cs_2p0_r1 ---
+{
+  "label": "chain_cs_2p0_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_171901_chain_cs_2p0_r1",
+  "date": "2026-05-30T17:19:01",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_171901_chain_cs_2p0_r1",
+  "label": "chain_cs_2p0_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:19:01",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 9407,
+  "annealing_time": 100,
+  "chain_strength": 2.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -367.23863341250177,
+  "E_std": 5.408982768080091,
+  "ground_state_probability": 0.0028702030402891466,
+  "chain_break_fraction": 0.0003904893519010666,
+  "qpu_access_time_us_sum": 3587930.2,
+  "qpu_programming_time_us_sum": 78810.2,
+  "qpu_sampling_time_us_sum": 3509120.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 224.92
+}
+
+--- chain_cs_2p25_r1 ---
+{
+  "label": "chain_cs_2p25_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.25,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_172454_chain_cs_2p25_r1",
+  "date": "2026-05-30T17:24:54",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_172454_chain_cs_2p25_r1",
+  "label": "chain_cs_2p25_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:24:54",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 9986,
+  "annealing_time": 100,
+  "chain_strength": 2.25,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -358.3039472457381,
+  "E_std": 8.078965920882483,
+  "ground_state_probability": 0.0006008411776487082,
+  "chain_break_fraction": 0.0005274050337138661,
+  "qpu_access_time_us_sum": 3589842.1999999997,
+  "qpu_programming_time_us_sum": 78802.2,
+  "qpu_sampling_time_us_sum": 3511040.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 231.52
+}
+
+--- chain_cs_2p5_r1 ---
+{
+  "label": "chain_cs_2p5_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.5,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_173105_chain_cs_2p5_r1",
+  "date": "2026-05-30T17:31:05",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_173105_chain_cs_2p5_r1",
+  "label": "chain_cs_2p5_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:31:05",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.5,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -348.08765868883665,
+  "E_std": 10.168880027378862,
+  "ground_state_probability": 0.0001,
+  "chain_break_fraction": 0.000583,
+  "qpu_access_time_us_sum": 3572936.2,
+  "qpu_programming_time_us_sum": 78816.2,
+  "qpu_sampling_time_us_sum": 3494120.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 235.38
+}
+
+--- chain_cs_2p75_r1 ---
+{
+  "label": "chain_cs_2p75_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.75,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_173710_chain_cs_2p75_r1",
+  "date": "2026-05-30T17:37:10",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_173710_chain_cs_2p75_r1",
+  "label": "chain_cs_2p75_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:37:10",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 10000,
+  "annealing_time": 100,
+  "chain_strength": 2.75,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -369.8841276960757,
+  "E_mean": -337.81338942441954,
+  "E_std": 11.373744147233017,
+  "ground_state_probability": 0.0001,
+  "chain_break_fraction": 0.0004826666666666666,
+  "qpu_access_time_us_sum": 3573845.3999999994,
+  "qpu_programming_time_us_sum": 78805.40000000001,
+  "qpu_sampling_time_us_sum": 3495040.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 230.38
+}
+
+--- chain_cs_3p0_r1 ---
+{
+  "label": "chain_cs_3p0_r1",
+  "study_type": "chain_strength",
+  "repeat_id": 1,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 3.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_174403_chain_cs_3p0_r1",
+  "date": "2026-05-30T17:44:03",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260530_174403_chain_cs_3p0_r1",
+  "label": "chain_cs_3p0_r1",
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 1,
+  "study_type": "chain_strength",
+  "date": "2026-05-30T17:44:03",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 10000,
+  "annealing_time": 100,
+  "chain_strength": 3.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -369.7626758548687,
+  "E_mean": -327.305995816049,
+  "E_std": 12.299266021351263,
+  "ground_state_probability": 0.0001,
+  "chain_break_fraction": 0.0004763333333333333,
+  "qpu_access_time_us_sum": 3558014.1999999997,
+  "qpu_programming_time_us_sum": 78814.2,
+  "qpu_sampling_time_us_sum": 3479200.0,
+  "qpu_anneal_time_per_sample_us": 100.0,
+  "qpu_readout_time_per_sample_us": 226.3
+}
+
+--- chain_cs_0p25_r2 ---
+{
+  "label": "chain_cs_0p25_r2",
+  "study_type": "chain_strength",
+  "repeat_id": 2,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 100,
+  "chain_strength": 0.25,
+  "experiment_group": "phase1_characterization",
+  "notes": "First presentation characterization campaign",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260530_175104_chain_cs_0p25_r2",
+  "date": "2026-05-30T17:51:04",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads

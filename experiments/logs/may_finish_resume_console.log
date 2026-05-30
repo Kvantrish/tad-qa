@@ -1,0 +1,390 @@
+Hamiltonian constructed: 300 linear terms, 3150 quadratic terms
+Preset may-finish contains 7 condition(s).
+
+--- reproducibility_20us_r04 ---
+{
+  "label": "reproducibility_20us_r04",
+  "study_type": "reproducibility",
+  "repeat_id": 4,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_010202_reproducibility_20us_r04",
+  "date": "2026-05-31T01:02:02",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_010202_reproducibility_20us_r04",
+  "label": "reproducibility_20us_r04",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 4,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:02:02",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1017,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -377.021686041519,
+  "E_std": 1.7761558288342232,
+  "ground_state_probability": 0.4768928220255654,
+  "chain_break_fraction": 0.00216322517207473,
+  "qpu_access_time_us_sum": 2783290.5999999996,
+  "qpu_programming_time_us_sum": 78810.6,
+  "qpu_sampling_time_us_sum": 2704480.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 226.28
+}
+
+--- reproducibility_20us_r05 ---
+{
+  "label": "reproducibility_20us_r05",
+  "study_type": "reproducibility",
+  "repeat_id": 5,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_010648_reproducibility_20us_r05",
+  "date": "2026-05-31T01:06:48",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_010648_reproducibility_20us_r05",
+  "label": "reproducibility_20us_r05",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 5,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:06:48",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1043,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.9144966801498,
+  "E_std": 1.7882806704205152,
+  "ground_state_probability": 0.4477468839884947,
+  "chain_break_fraction": 0.0021284755512943434,
+  "qpu_access_time_us_sum": 2793885.4,
+  "qpu_programming_time_us_sum": 78805.4,
+  "qpu_sampling_time_us_sum": 2715080.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 231.06
+}
+
+--- reproducibility_20us_r06 ---
+{
+  "label": "reproducibility_20us_r06",
+  "study_type": "reproducibility",
+  "repeat_id": 6,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_011236_reproducibility_20us_r06",
+  "date": "2026-05-31T01:12:36",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_011236_reproducibility_20us_r06",
+  "label": "reproducibility_20us_r06",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 6,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:12:36",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1016,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.9825587052617,
+  "E_std": 1.833653522840361,
+  "ground_state_probability": 0.47834645669291337,
+  "chain_break_fraction": 0.0021686351706036743,
+  "qpu_access_time_us_sum": 2779339.0,
+  "qpu_programming_time_us_sum": 78819.0,
+  "qpu_sampling_time_us_sum": 2700520.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 231.96
+}
+
+--- reproducibility_20us_r07 ---
+{
+  "label": "reproducibility_20us_r07",
+  "study_type": "reproducibility",
+  "repeat_id": 7,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_011744_reproducibility_20us_r07",
+  "date": "2026-05-31T01:17:44",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_011744_reproducibility_20us_r07",
+  "label": "reproducibility_20us_r07",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 7,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:17:44",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 1076,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -377.04341688961097,
+  "E_std": 1.8184832890791052,
+  "ground_state_probability": 0.4879182156133829,
+  "chain_break_fraction": 0.0023605947955390337,
+  "qpu_access_time_us_sum": 2781977.0,
+  "qpu_programming_time_us_sum": 78817.0,
+  "qpu_sampling_time_us_sum": 2703160.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 233.8
+}
+
+--- reproducibility_20us_r08 ---
+{
+  "label": "reproducibility_20us_r08",
+  "study_type": "reproducibility",
+  "repeat_id": 8,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_012321_reproducibility_20us_r08",
+  "date": "2026-05-31T01:23:21",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_012321_reproducibility_20us_r08",
+  "label": "reproducibility_20us_r08",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 8,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:23:21",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 926,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.8614601687504,
+  "E_std": 1.879415949962115,
+  "ground_state_probability": 0.44600431965442766,
+  "chain_break_fraction": 0.0021202303815694747,
+  "qpu_access_time_us_sum": 2791496.6,
+  "qpu_programming_time_us_sum": 78816.6,
+  "qpu_sampling_time_us_sum": 2712680.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 227.38
+}
+
+--- reproducibility_20us_r09 ---
+{
+  "label": "reproducibility_20us_r09",
+  "study_type": "reproducibility",
+  "repeat_id": 9,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_012904_reproducibility_20us_r09",
+  "date": "2026-05-31T01:29:04",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_012904_reproducibility_20us_r09",
+  "label": "reproducibility_20us_r09",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 9,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:29:04",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 735,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.73521402648134,
+  "E_std": 1.8607056733525211,
+  "ground_state_probability": 0.40272108843537413,
+  "chain_break_fraction": 0.001854875283446712,
+  "qpu_access_time_us_sum": 2795681.8000000003,
+  "qpu_programming_time_us_sum": 78801.8,
+  "qpu_sampling_time_us_sum": 2716880.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 229.72
+}
+
+--- reproducibility_20us_r10 ---
+{
+  "label": "reproducibility_20us_r10",
+  "study_type": "reproducibility",
+  "repeat_id": 10,
+  "alpha": 0.4,
+  "num_reads": 10000,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "run_id": "20260531_013343_reproducibility_20us_r10",
+  "date": "2026-05-31T01:33:43",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000"
+}
+Batch 1/5: 2000 reads
+Batch 2/5: 2000 reads
+Batch 3/5: 2000 reads
+Batch 4/5: 2000 reads
+Batch 5/5: 2000 reads
+Summary:
+{
+  "run_id": "20260531_013343_reproducibility_20us_r10",
+  "label": "reproducibility_20us_r10",
+  "experiment_group": "phase1_characterization",
+  "notes": "Resume reproducibility from r04",
+  "embedding_id": "auto_embedding",
+  "repeat_id": 10,
+  "study_type": "reproducibility",
+  "date": "2026-05-31T01:33:43",
+  "git_commit": "5cebfed",
+  "solver": "Advantage_system4",
+  "alpha": 0.4,
+  "num_reads_requested": 10000,
+  "num_samples_returned": 698,
+  "annealing_time": 20,
+  "chain_strength": 1.0,
+  "num_batches": 5,
+  "reads_per_batch": "2000;2000;2000;2000;2000",
+  "E_min": -378.73061014646265,
+  "E_mean": -376.80510171395184,
+  "E_std": 1.7926121728526865,
+  "ground_state_probability": 0.41117478510028654,
+  "chain_break_fraction": 0.001833810888252149,
+  "qpu_access_time_us_sum": 2788775.4,
+  "qpu_programming_time_us_sum": 78815.4,
+  "qpu_sampling_time_us_sum": 2709960.0,
+  "qpu_anneal_time_per_sample_us": 20.0,
+  "qpu_readout_time_per_sample_us": 227.62
+}
+
+Finished all conditions.
+Main log: experiments/logs/experiment_log.csv

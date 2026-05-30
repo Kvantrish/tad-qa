@@ -110,6 +110,7 @@ def save_batch_npz(path: Path, response: Any, metadata: dict[str, Any]) -> None:
     arrays = {
         "samples": response.record.sample,
         "energies": response.record.energy,
+        "num_occurrences": response.record.num_occurrences,
         "metadata_json": np.array(metadata_json),
         "response_info_json": np.array(info_json),
     }
@@ -120,16 +121,31 @@ def save_batch_npz(path: Path, response: Any, metadata: dict[str, Any]) -> None:
     np.savez(path, **arrays)
 
 
-def summarize_condition(label: str, all_energies: list[np.ndarray], all_chainbreaks: list[np.ndarray], timing_records: list[dict[str, Any]], config: dict[str, Any]) -> dict[str, Any]:
+def summarize_condition(
+    label: str,
+    all_energies: list[np.ndarray],
+    all_occurrences: list[np.ndarray],
+    all_chainbreaks: list[np.ndarray],
+    timing_records: list[dict[str, Any]],
+    config: dict[str, Any],
+) -> dict[str, Any]:
     energies = np.concatenate(all_energies)
+    occurrences = np.concatenate(all_occurrences).astype(float)
+
+    total_occurrences = float(np.sum(occurrences))
     e_min = float(np.min(energies))
-    e_mean = float(np.mean(energies))
-    e_std = float(np.std(energies))
-    ground_prob = float(np.mean(np.isclose(energies, e_min)))
+
+    e_mean = float(np.average(energies, weights=occurrences))
+    e_var = float(np.average((energies - e_mean) ** 2, weights=occurrences))
+    e_std = float(np.sqrt(e_var))
+
+    ground_mask = np.isclose(energies, e_min)
+    ground_prob = float(np.sum(occurrences[ground_mask]) / total_occurrences)
 
     cb = None
     if all_chainbreaks:
-        cb = float(np.mean(np.concatenate(all_chainbreaks)))
+        chainbreaks = np.concatenate(all_chainbreaks)
+        cb = float(np.average(chainbreaks, weights=occurrences))
 
     def timing_sum(key: str) -> float | None:
         vals = []
@@ -152,7 +168,8 @@ def summarize_condition(label: str, all_energies: list[np.ndarray], all_chainbre
         "solver": config["solver"],
         "alpha": config["alpha"],
         "num_reads_requested": config["num_reads"],
-        "num_samples_returned": int(len(energies)),
+        "num_unique_samples_returned": int(len(energies)),
+        "num_occurrences_total": int(total_occurrences),
         "annealing_time": config["annealing_time"],
         "chain_strength": config["chain_strength"],
         "num_batches": config["num_batches"],
@@ -180,12 +197,12 @@ def append_csv_row(csv_path: Path, row: dict[str, Any]) -> None:
         writer.writerow(row)
 
 
-def plot_histogram(energies: np.ndarray, label: str, out_path: Path) -> None:
+def plot_histogram(energies: np.ndarray, label: str, out_path: Path, weights: np.ndarray | None = None) -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(8, 5))
-    plt.hist(energies, bins=30)
+    plt.hist(energies, bins=30, weights=weights)
     plt.xlabel("Energy")
-    plt.ylabel("Count")
+    plt.ylabel("Weighted count" if weights is not None else "Count")
     plt.title(label)
     plt.tight_layout()
     plt.savefig(out_path, dpi=200)
@@ -402,6 +419,22 @@ def make_preset_configs(preset: str) -> list[dict[str, Any]]:
             })
 
         return configs
+    
+    if preset == "boltzmann-test":
+        configs = []
+
+        for alpha in [0.3, 0.4, 0.5, 0.6]:
+            configs.append({
+                "label": f"boltzmann_alpha_{str(alpha).replace('.', 'p')}",
+                "study_type": "boltzmann_sampling",
+                "repeat_id": 1,
+                "alpha": alpha,
+                "num_reads": 50000,
+                "annealing_time": 20,
+                "chain_strength": 1.0,
+            })
+
+        return configs
 
     if preset == "alpha-small":
         return [
@@ -450,6 +483,7 @@ def run_condition(sampler: Any, h_base: dict[int, float], J_base: dict[tuple[int
     print(json.dumps(run_meta, indent=2, default=str))
 
     all_energies: list[np.ndarray] = []
+    all_occurrences: list[np.ndarray] = []
     all_chainbreaks: list[np.ndarray] = []
     timing_records: list[dict[str, Any]] = []
 
@@ -481,13 +515,15 @@ def run_condition(sampler: Any, h_base: dict[int, float], J_base: dict[tuple[int
         save_batch_npz(batch_path, response, metadata)
 
         all_energies.append(response.record.energy)
+        all_occurrences.append(response.record.num_occurrences)
         if "chain_break_fraction" in response.record.dtype.names:
             all_chainbreaks.append(response.record.chain_break_fraction)
 
     energies = np.concatenate(all_energies)
-    plot_histogram(energies, label, plots_dir / f"energy_{label}_{run_id}.png")
+    occurrences = np.concatenate(all_occurrences)
+    plot_histogram(energies, label, plots_dir / f"energy_{label}_{run_id}.png", weights=occurrences)
 
-    summary = summarize_condition(label, all_energies, all_chainbreaks, timing_records, run_meta)
+    summary = summarize_condition(label, all_energies, all_occurrences, all_chainbreaks, timing_records, run_meta)
     append_csv_row(logs_dir / "experiment_log.csv", summary)
 
     print("Summary:")
@@ -501,7 +537,7 @@ def main() -> None:
     parser.add_argument(
     "--preset",
     default="smoke",
-    choices=["smoke", "timing", "calibration-full", "thesis-full", "may-remaining", "may-finish", "alpha-small", "previous-full", "single"])
+    choices=["smoke", "timing", "calibration-full", "thesis-full", "may-remaining", "may-finish", "boltzmann-test", "alpha-small", "previous-full", "single"])
     parser.add_argument("--raw-dir", default="experiments/raw")
     parser.add_argument("--plots-dir", default="experiments/plots")
     parser.add_argument("--logs-dir", default="experiments/logs")
